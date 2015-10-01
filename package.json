@@ -1,0 +1,38 @@
+{
+  "name": "zip-mapper",
+  "version": "1.0.0",
+  "description": "Unzip a .zip file and map the structure in an object",
+  "main": "src/zipMapper.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test/*.js",
+    "cov": "istanbul cover node_modules/.bin/tape --report lcovonly test/*.js && coveralls < ./coverage/lcov.info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManRueda/zip-mapper.git"
+  },
+  "keywords": [
+    "zip",
+    "unzip",
+    "fs",
+    "mapper"
+  ],
+  "author": "Manuel Rueda <manuel.rueda.un@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ManRueda/zip-mapper/issues"
+  },
+  "homepage": "https://github.com/ManRueda/zip-mapper#readme",
+  "devDependencies": {
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.3.21",
+    "tape": "^4.2.0"
+  },
+  "dependencies": {
+    "temp": "^0.8.3",
+    "unzip": "^0.1.11"
+  }
+}

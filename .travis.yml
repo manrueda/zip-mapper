@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- '0.12'
+env:
+
+script:
+  - npm install
+  - npm test
+  - npm run cov
+before_script:
+  - npm install tape -g
