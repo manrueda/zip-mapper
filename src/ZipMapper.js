@@ -37,7 +37,7 @@ module.exports.prototype.cleanTemp = function(cb){
     fs.unlink(that.tempDir, function(){
       that.tempDir = '';
       if (cb){
-        cb
+        cb();
       }
     });
   }
@@ -142,7 +142,7 @@ function memoryOutput(zipPath, cb) {
 
 function validateParameters(path, onMemory, cb){
   var err;
-  if (path === undefined || path == ''){
+  if (path === undefined || path === ''){
     err = new Error('The zip file is empty.');
   }else{
     var stat = fs.statSync(path);
@@ -152,7 +152,7 @@ function validateParameters(path, onMemory, cb){
   }
   if (err){
     if (cb){
-      cb(err)
+      cb(err);
     }else{
       throw err;
     }

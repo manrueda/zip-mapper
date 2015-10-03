@@ -1,0 +1,12 @@
+{
+    "requireSemicolons": true,
+    "requireParenthesesAroundIIFE": true,
+    "maximumLineLength": 120,
+    "validateLineBreaks": "LF",
+    "validateIndentation": 2,
+    "disallowTrailingComma": true,
+    "disallowSpacesInsideObjectBrackets": null,
+    "disallowImplicitTypeConversion": ["string"],
+    "safeContextKeyword": "that",
+    "validateQuoteMarks": "'"
+}

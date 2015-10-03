@@ -5,7 +5,8 @@ env:
 
 script:
   - npm install
+  - grunt
   - npm test
   - npm run cov
 before_script:
-  - npm install tape -g
+  - npm install grunt-cli tape -g
