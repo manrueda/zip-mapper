@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/ManRueda/zip-mapper#readme",
   "devDependencies": {
-    "coveralls": "2.11.4",
+    "coveralls": "2.11.7",
     "grunt": "0.4.5",
     "grunt-contrib-jshint": "0.11.3",
     "grunt-jscs": "2.4.0",
